@@ -1,2 +1,5 @@
 This ETL pipeline automates the extraction, transformation, and loading of e-commerce data from APIs into Google BigQuery, enabling data-driven insights. The pipeline fetches user, product, and cart data, stores the raw JSON files in Google Cloud Storage (GCS) for backup, and cleans and structures the data before loading it into BigQuery. It then performs SQL-based transformations to generate enriched tables—user_summary, category_summary, and cart_details—which provide aggregated insights into user spending, product category sales, and detailed transaction records. Finally, the transformed data is exported as CSV files to GCS for further analysis. The pipeline is designed to run daily, ensuring up-to-date reporting while balancing performance, storage costs, and scalability.
 The documentation on Pipeline Design, Codebase Overview, BigQuery Queries, and Assumptions and Trade-offs can be accessed in: [pipeline documentation](https://github.com/harrykyalo/Data_Enginnering_Pipeline/blob/main/Code/Documentation.md)
+
+## DAG Graph
+![image](https://github.com/user-attachments/assets/1920e063-9025-4a76-a488-7ec8e037a11a)
